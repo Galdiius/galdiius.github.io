@@ -73,3 +73,11 @@ body{
     padding: 7px;
     border-radius: 10px;
 }
+#button{
+    width: 110px;
+    color: white;
+    background: #2ecc71;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+}
