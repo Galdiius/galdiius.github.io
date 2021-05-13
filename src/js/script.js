@@ -1,37 +1,4 @@
-AOS.init({
-  once : true
-});
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwpwyHYZzZGA11j1uk7cuf8T2tgPRAruIK-kAhWXKKzU4tWM1aO2LvtEeMSlgK337Ae/exec'
-const form = document.forms['submit-to-google-sheet']
-let btn_loading = document.getElementById('btn-loading')
-let btn_submit = document.getElementById('btn-submit')
-btn_loading.style.display = "none"
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  btn_submit.style.display = "none"
-  btn_loading.style.display = "block"
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => {
-      btn_submit.style.display = "block"
-      btn_loading.style.display = "none"
-      Swal.fire({
-        title: 'Success',
-        text: 'Your message has been sended',
-        icon: 'success',
-        confirmButtonText: 'Ok'
-      })
-    })
-    .catch(error => {
-      btn_submit.style.display = "block"
-      btn_loading.style.display = "none"
-      Swal.fire({
-        title: 'Error',
-        text: 'An error occurred while sending the message',
-        icon: 'error',
-        confirmButtonText: 'Close'
-      })
-  })
-})
+
 
 var typeText = document.querySelector(".typeText")
 var textToBeTyped = "a software engineer"
