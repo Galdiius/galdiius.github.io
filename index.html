@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -47,8 +49,8 @@
     <!-- Home -->
     <div class="home container text-center mt-5 p-5">
         <img src="https://i.postimg.cc/KYQcK0f3/killua-zoldyck.jpg" width="200" height="200" class="rounded-circle shadow-lg" alt="">
-        <h3 class="mt-3">MY NAME IS <b>GUSTOPA</b></h3>
-        <h5>I AM A WEB DEVELOPER</h5>
+        <h3 class="mt-3">MY NAME IS <b class="text-primary">GUSTOPA</b></h3>
+        <h5>I AM <span class="typeText text-warning"></span></h5>
       </div>
       <!-- Akhir Home -->
       <!-- About -->
@@ -62,10 +64,10 @@
             </div>
             <div class="about-text mt-4">
                 <div class="row justify-content-center">
-                    <div class="col-lg-5" style="border-right: 1px solid #ccc;">
+                    <div class="col-lg-5" style="border-right: 1px solid #ccc;" data-aos="fade-right">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem magnam repellendus corrupti veniam dolorum possimus, commodi est distinctio, totam neque sapiente voluptatem inventore accusantium, cumque fuga? Doloribus saepe alias doloremque?</p>
                     </div>
-                    <div class="col-lg-5" style="border-left: 1px solid #ccc;">
+                    <div class="col-lg-5" style="border-left: 1px solid #ccc;" data-aos="fade-left">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, magnam maiores quia consectetur assumenda natus totam dolore. Recusandae velit possimus animi quae quos veniam! Explicabo et corporis distinctio quos inventore?</p>
                     </div>
                 </div>
@@ -83,7 +85,7 @@
           </div>
           <div class="profile-text mt-4">
               <div class="row justify-content-center">
-                  <div class="col-lg-5">
+                  <div class="col-lg-5"  data-aos="fade-in" data-aos-duration="1000">
                       <div>
                           <h5 class="d-inline"><b>Name</b> : Gustopa</h5><br><br>
                           <h5 class="d-inline"><b>Full Name</b> : Gustopa Muhamad Irsad</h5> <br><br>
@@ -96,7 +98,7 @@
                         </h5><br><br>
                       </div>
                   </div>
-                  <div class="col-lg-5">
+                  <div class="col-lg-5" data-aos="flip-left" data-aos-duration="1000">
                     <iframe width="350" height="300" style="border:0" loading="lazy" allowfullscreen
                     src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJB7g7DlVUby4RwYFwLbOCsRs&key=AIzaSyB4KoxwsfVdOhCdrbySRC3b5ELp7L32-P8"></iframe>
                   </div>
@@ -114,7 +116,7 @@
                 <div class="line-skills"></div>
               </div>
           </div>
-          <div class="skills-text">
+          <div class="skills-text" data-aos="zoom-in" data-aos-duration="800">
               <div class="row">
                   <div class="col-6">
                       <div class="progress">
@@ -159,7 +161,7 @@
               <div class="line-project"></div>
             </div>
         </div>
-        <div class="project-text">
+        <div class="project-text" data-aos="flip-down" data-aos-offset="430">
             <!-- Carousel wrapper -->
                 <div
                 id="carouselMultiItemExample"
@@ -294,7 +296,7 @@
               <div class="line-contact"></div>
             </div>
         </div>
-        <div class="contact-text">
+        <div class="contact-text" data-aos="zoom-in-up" data-aos-offset="350">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="row">
@@ -336,11 +338,18 @@
       </div>
       <!-- Akhir Footer -->
 
+      <script src="./src/js/script.js"></script>
       <script src="./src/fontawesome/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <script
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
   ></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        once : true
+    });
+  </script>
 </body>
 </html>
