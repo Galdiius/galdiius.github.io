@@ -89,3 +89,8 @@ body{
     0%, 100% {opacity: 1;}
     50% {opacity: 0;}
   }  
+  .image{
+      background: url(https://i.postimg.cc/9XkCLyk2/2.png);
+      height: 200px;
+      width: 200px;
+  }
