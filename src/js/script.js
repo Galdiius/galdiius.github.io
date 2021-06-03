@@ -2,7 +2,7 @@
 
 var typeText = document.querySelector(".typeText")
 var textToBeTyped = "a software engineer"
-var textToBeTypedArr = ["A WEB DEVELOPER", "A GAMER", "GALDIUS"]
+var textToBeTypedArr = ["A WEB DEVELOPER", "A FREELANCER"]
 var index = 0, isAdding = true, textToBeTypedIndex = 0
 
 function playAnim() {
